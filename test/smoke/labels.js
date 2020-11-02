@@ -14,6 +14,30 @@ describe('My Little Hero', function () { //define suite title by passing a strin
 
     });
 
+    describe('Page title and description are present and correct text is displayed',
+        function () { //define sub-suite title by passing a string
+
+        it('TC-002 Page title (H3) is displayed', function () {
+            const head3 = $(sel.head3).isDisplayed();
+            expect(head3).toEqual(true);
+        });
+
+        it('TC-003 Page title (H3) text is correct', function () {
+            const head3 = $(sel.head3).getText();
+            expect(head3).toEqual(exp.textH3);
+        });
+
+        it('TC-004 Page description (p) is displayed', function () {
+            const p = $(sel.paragraph).isDisplayed();
+            expect(p).toEqual(true);
+        });
+
+        it('TC-005 Page description (p) text is correct', function () {
+            const p = $(sel.paragraph).getText();
+            expect(p).toEqual(exp.textP);
+        });
+
+        });
 
     describe('Labels exist', function () {
 
@@ -41,18 +65,18 @@ describe('My Little Hero', function () { //define suite title by passing a strin
 
     describe('Labels are correct', function () {
 
-        xit('TC-006 Label for name = 1. What is your HERO\'s name?', function () {
-            const text = $$(sel.label)[0].getText();
+        it('TC-006 Label for name = 1. What is your HERO\'s name?', function () {
+            const text = $$(sel.label)[0].getAttribute("title");
             expect(text).toEqual(exp.labelName);
         });
 
-       xit('TC-007 Label for gender = 2. Please choose a gender.', function () {
+       it('TC-007 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.label)[1].getText();
             expect(text).toEqual(exp.labelGender);
         });
 
-        xit('TC-008 Label for age = 3. How old is your Hero?', function () {
-            const text = $$(sel.label)[2].getText();
+        it('TC-008 Label for age = 3. How old is your Hero?', function () {
+            const text = $$(sel.label)[2].getAttribute("title");
             expect(text).toEqual(exp.labelAge);
         });
 
