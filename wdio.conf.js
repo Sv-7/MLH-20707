@@ -17,7 +17,9 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './test/*.js'
+        // './test/smoke/inputs.js'
+        './test/smoke/*.js',
+        './test/regression/*.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -78,7 +80,7 @@ exports.config = {
     // - @wdio/cli, @wdio/config, @wdio/sync, @wdio/utils
     // Level of logging verbosity: trace | debug | info | warn | error | silent
     // logLevels: {
-    //     webdriver: 'info',
+    //     webdriver: 'silent',
     //     '@wdio/applitools-service': 'info'
     // },
     //
