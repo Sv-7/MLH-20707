@@ -4,5 +4,14 @@
   "labelName": "1. What is your Hero's name?",
   "labelGender":"2. Please choose a gender.",
   "labelAge": "3. How old is your Hero?",
-  "labelStory": "4. What type of story would you like to read?"
+  "labelStory": "4. What type of story would you like to read?",
+  "labelImage": "5. Upload an image (optional)",
+  "placeholderName": "Hero's name",
+  "placeholderGenderHe": "he",
+  "placeholderGenderShe": "she",
+  "placeholderGenderIt": "it",
+  "placeholderAge":"Hero's age",
+  "placeholderStory":"Type of the story",
+  "placeholderImage": "Click or drag and drop",
+  "submitButton": "Create!"
 }

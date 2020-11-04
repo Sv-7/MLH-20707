@@ -41,50 +41,62 @@ describe('My Little Hero', function () { //define suite title by passing a strin
 
     describe('Labels exist', function () {
 
-        it('TC-002 Label for name', function () {
+        it('TC-006 Label for name', function () {
             const label = $$(sel.label)[0].isDisplayed();
             expect(label).toEqual(true);
         });
 
-        it('TC-003 Label for gender', function () {
+        it('TC-007 Label for gender', function () {
             const label = $$(sel.label)[1].isDisplayed();
             expect(label).toEqual(true);
         });
 
-        it('TC-004 Label for age', function () {
+        it('TC-008 Label for age', function () {
             const label = $$(sel.label)[2].isDisplayed();
             expect(label).toEqual(true);
         });
 
-        it('TC-005 Label for story', function () {
+        it('TC-009 Label for story', function () {
             const label = $$(sel.label)[3].isDisplayed();
+            expect(label).toEqual(true);
+        });
+
+        it('TC-0010 Label for Images', function () {
+            const label = $$(sel.label)[4].isDisplayed();
             expect(label).toEqual(true);
         });
 
     });
 
     describe('Labels are correct', function () {
+// to check the text we can use both(?) getAttribute("title") OR/AND getText().
+// May be sellector ".ant-col.ant-col-16.ant-form-item-label" works only with getText()
 
-        it('TC-006 Label for name = 1. What is your HERO\'s name?', function () {
-            const text = $$(sel.label)[0].getAttribute("title");
+        it('TC-011 Label for name = 1. What is your HERO\'s name?', function () {
+            const text = $$(sel.label)[0].getText();
             expect(text).toEqual(exp.labelName);
         });
 
-       it('TC-007 Label for gender = 2. Please choose a gender.', function () {
+       it('TC-012 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.label)[1].getText();
             expect(text).toEqual(exp.labelGender);
         });
 
-        it('TC-008 Label for age = 3. How old is your Hero?', function () {
-            const text = $$(sel.label)[2].getAttribute("title");
+        xit('TC-013 Label for age = 3. How old is your Hero?', function () {
+            const text = $$(sel.label)[2].getText();
             expect(text).toEqual(exp.labelAge);
         });
 
-        it('TC-009 Label for story = 4. What type of story would you like to read?', function () {
+        it('TC-014 Label for story = 4. What type of story would you like to read?',
+            function () {
             const text = $$(sel.label)[3].getText();
             expect(text).toEqual(exp.labelStory);
         });
 
+        it('TC-015 Label for Image = 5. Upload an image (optional)', function () {
+            const text = $$(sel.label)[4].getText();
+            expect(text).toEqual(exp.labelImage);
+        });
     });
 
 
