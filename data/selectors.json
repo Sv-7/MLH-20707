@@ -1,12 +1,16 @@
 {
   "head3": "h3",
   "paragraph": "p",
-  "label": ".ant-form-item-required",
+  "label": ".ant-col.ant-col-16.ant-form-item-label",
   "name": "#name",
   "gender": ".ant-radio",
   "age": "#age",
   "story": ".ant-select-selector",
+  "image": ".ant-upload",
   "create": ".ant-btn",
   "storyClick": ".ant-select-show-arrow",
-  "storyType": ".ant-select-item-option"
+  "storyType": ".ant-select-item-option",
+  "storyPlaceHold": ".ant-select-selection-placeholder",
+  "genderOptions": ".ant-radio-wrapper",
+  "tryAgain": ".btn-primary"
 }
