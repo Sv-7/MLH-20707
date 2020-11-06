@@ -18,14 +18,12 @@ exports.config = {
     //
     specs: [
         './test/smoke/mainFunctionality.js',
-        './test/smoke/labels.js',
-        './test/smoke/inputs.js'
+        './test/regression/labels.js',
+        './test/regression/inputs.js'
     ],
     // Patterns to exclude.
     exclude: [
-        './test/smoke/labels.js',
-        './test/smoke/inputs.js',
-        './test/regression/*.js'
+        './test/regression/inputs.js'
     ],
     //
     // ============
