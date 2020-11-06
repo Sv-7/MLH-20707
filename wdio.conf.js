@@ -23,6 +23,7 @@ exports.config = {
     ],
     // Patterns to exclude.
     exclude: [
+        './test/regression/inputs.js'
     ],
     //
     // ============
