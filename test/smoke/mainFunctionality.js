@@ -5,6 +5,7 @@ const inputValues4 = require ('../../helpers/inputValues4');
 const inputValues4AndClick = require ('../../helpers/inputValue4AndClick');
 
 describe('Checking the main functionality', function () {
+
     describe('Happy path', function () {
 
         it('TC-032 Create button is clickable after 1-4 are filled in', function () {
@@ -26,7 +27,6 @@ describe('Checking the main functionality', function () {
             expect(btn).toEqual(true);
 
             $(sel.tryAgain).click();
-
         });
 
         it('TC-034 ...', function () {
