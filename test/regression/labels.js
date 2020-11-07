@@ -37,7 +37,7 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             expect(p).toEqual(exp.textP);
         });
 
-        });
+    });
 
     describe('Labels exist', function () {
 
@@ -70,14 +70,14 @@ describe('My Little Hero', function () { //define suite title by passing a strin
 
     describe('Labels are correct', function () {
 // to check the text we can use both(?) getAttribute("title") OR/AND getText().
-// May be sellector ".ant-col.ant-col-16.ant-form-item-label" works only with getText()
+// May be selector ".ant-col.ant-col-16.ant-form-item-label" works only with getText()
 
         it('TC-011 Label for name = 1. What is your HERO\'s name?', function () {
             const text = $$(sel.label)[0].getText();
             expect(text).toEqual(exp.labelName);
         });
 
-       it('TC-012 Label for gender = 2. Please choose a gender.', function () {
+        it('TC-012 Label for gender = 2. Please choose a gender.', function () {
             const text = $$(sel.label)[1].getText();
             expect(text).toEqual(exp.labelGender);
         });
@@ -97,7 +97,7 @@ describe('My Little Hero', function () { //define suite title by passing a strin
             const text = $$(sel.label)[4].getText();
             expect(text).toEqual(exp.labelImage);
         });
-    });
 
+    });
 
 });
