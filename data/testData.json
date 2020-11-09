@@ -5,6 +5,6 @@
     "she": 1,
     "it": 2
     },
-  "age": 123,
+  "age": [1, "a"],
   "storyType": 6
 }
