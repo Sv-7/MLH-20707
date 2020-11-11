@@ -13,5 +13,7 @@
   "placeholderAge":"Hero's age",
   "placeholderStory":"Type of the story",
   "placeholderImage": "Click or drag and drop",
-  "submitButton": "Create!"
+  "submitButton": "Create!",
+  "ageAlertLooksLikeUnrealAge": "looks like unreal age",
+  "ageAlertRequired": "Required"
 }

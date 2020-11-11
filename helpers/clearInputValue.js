@@ -1,4 +1,3 @@
-//const sel = require ('../data/selectors.json');
 
 function clearInputValue(selector){
     while (selector.getValue() !== '') {
