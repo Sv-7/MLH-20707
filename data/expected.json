@@ -15,5 +15,15 @@
   "placeholderImage": "Click or drag and drop",
   "submitButton": "Create!",
   "ageAlertLooksLikeUnrealAge": "looks like unreal age",
-  "ageAlertRequired": "Required"
+  "ageAlertRequired": "Required",
+  "ageWords": [
+    "one", "two", "three", "four", "five",
+    "six", "seven", "eight", "nine", "ten",
+    "eleven", "twelve", "thirteen", "fourteen", "fifteen",
+    "sixteen", "seventeen", "eighteen", "nineteen",
+    "twenty", "thirty", "forty", "fifty",
+    "sixty", "seventy", "eighty", "ninety",
+    "a hundred", "a thousand", "a million",
+    "a billion", "a hundred billions"
+  ]
 }
