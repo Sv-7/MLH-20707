@@ -91,4 +91,44 @@ describe('Age field inputs validation', function () {
 
     });
 
+    describe('Age field input with Arrow Up/Down', function () {
+
+        before(() => {
+            browser.url('https://qa-apps.netlify.app/app_my_hero');
+            inputValues4(data.name, data.gender.she, data.age, data.storyType.Comedy)
+        });
+
+        beforeEach(() => {
+            clearInputValue($(sel.age));
+        });
+
+        it('TC-01 Age input arrow UP = 1', function () {
+            //ageSetValuePositivePath($(sel.age), data.agePos, 0);
+            $(sel.ageArrowUp).click();
+            expect($(sel.create).isEnabled()).toEqual(true);
+        });
+
+        it('TC-02 Age input arrow UP to >12 symbols = ', function () {
+            $(sel.age).setValue((data.agePos)[2]);
+            $(sel.ageArrowUp).click();
+            expect($(sel.create).isEnabled()).toEqual(false);
+            browser.pause(1000);
+            const result = $(sel.ageAlert).getText();
+            expect(result).toEqual(exp.ageAlertLooksLikeUnrealAge);
+        });
+
+        it('TC-03 Age input arrow down to 0', function () {
+            $(sel.age).setValue((data.ageNeg)[7]);
+            $(sel.ageArrowDown).click();
+            expect($(sel.create).isEnabled()).toEqual(false);
+        });
+
+        it('TC-04 Age input arrow down to <0', function () {
+            $(sel.age).setValue((data.ageNeg)[7]);
+            $(sel.ageArrowDown).click();
+            expect($(sel.create).isEnabled()).toEqual(false);
+        });
+
+    });
+
 });
