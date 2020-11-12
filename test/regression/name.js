@@ -1,5 +1,5 @@
 const sel = require('../../data/selectors.json');
-const clearInputValue = require('../../helpers/clearInput');
+const clearInputValue = require('../../helpers/clearInputValue');
 const testData = require('../../data/testData.json');
 
 before(() => {
@@ -11,7 +11,7 @@ describe('My Little Hero: Name Values Checking', function () {
     describe('Getting to the page', function () {
 
         beforeEach(() => {
-            clearInputValue.clearInputValue($(sel.name));
+            clearInputValue($(sel.name));
         });
 
         it('TC-046 Placeholder is correct ', function () {

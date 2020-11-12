@@ -1,4 +1,3 @@
-//const sel = require ('../data/selectors.json');
 
 function clearInputValue(selector){
     while (selector.getValue() !== '') {
@@ -6,4 +5,4 @@ function clearInputValue(selector){
         selector.keys('Delete')
     }
 }
-module.exports = { clearInputValue : clearInputValue};
+module.exports = clearInputValue;
