@@ -48,7 +48,7 @@ describe('Checking the main functionality', function () {
 
             it('TC-035  Image is uploading (600px - jpg)', function () {
                 browser.url('');
-                inputValues4(data.name, data.gender.he, data.age,data.storyType);
+                inputValues4(data.name, data.gender.he, data.age,data.storyType.Comedy);
                 browser.pause(2000);
                 const inputDiv = $('.ant-upload input');
                 const SubmitButton = $(sel.create);
