@@ -25,5 +25,6 @@
     "sixty", "seventy", "eighty", "ninety",
     "a hundred", "a thousand", "a million",
     "a billion", "a hundred billions"
-  ]
+  ],
+  "tryAgainBtn": "Try again!"
 }
