@@ -6,5 +6,19 @@
     "it": 2
     },
   "age": 123,
-  "storyType": 6
+  "storyType": 6,
+  "namePlaceHolder" : "Hero's name",
+  "name047" : "Anna",
+  "name048" : "12345678910",
+  "name049" : "!@#$%^&*()_+=<>?,./:\";'{}[]|\\~`",
+  "name050" : "ANNA",
+  "name051" : "anna",
+  "name052" : "AnnA",
+  "name053" : "AnnaMaria",
+  "name054" : "Anna123!@#",
+  "name056" : "Anna Maria",
+  "name057" : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!-_=\",',.",
+  "name058" : "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!-_=\",',.?",
+  "name059" : "",
+  "name055" : "   "
 }

@@ -12,5 +12,6 @@
   "storyType": ".ant-select-item-option",
   "storyPlaceHold": ".ant-select-selection-placeholder",
   "genderOptions": ".ant-radio-wrapper",
-  "tryAgain": ".btn-primary"
+  "tryAgain": ".btn-primary",
+  "alert" : "[role = alert]"
 }

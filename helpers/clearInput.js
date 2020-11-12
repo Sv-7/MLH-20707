@@ -6,4 +6,4 @@ function clearInputValue(selector){
         selector.keys('Delete')
     }
 }
-module.exports = clearInputValue;
+module.exports = { clearInputValue : clearInputValue};
