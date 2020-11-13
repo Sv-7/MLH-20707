@@ -115,7 +115,7 @@ describe('Age field inputs validation', function () {
             $(sel.ageArrowUp).click();
             expect($(sel.create).isEnabled()).toEqual(false);
             browser.pause(1000);
-            const result = $(sel.ageAlert).getText();
+            const result = $(sel.alert).getText();
             expect(result).toEqual(exp.ageAlertLooksLikeUnrealAge);
         });
 

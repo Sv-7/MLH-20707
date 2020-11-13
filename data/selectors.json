@@ -13,7 +13,7 @@
   "storyPlaceHold": ".ant-select-selection-placeholder",
   "genderOptions": ".ant-radio-wrapper",
   "tryAgain": ".btn-primary",
+  "alert" : "[role = alert]",
   "ageArrowUp": ".ant-input-number-handler-up",
-  "ageArrowDown": ".ant-input-number-handler-down",
-  "ageAlert": "[role = alert]"
+  "ageArrowDown": ".ant-input-number-handler-down"
 }
