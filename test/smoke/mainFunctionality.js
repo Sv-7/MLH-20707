@@ -50,7 +50,7 @@ describe('Checking the main functionality', function () {
                 browser.url('');
                 inputValues4(data.name, data.gender.he, data.age,data.storyType.Comedy);
                 browser.pause(2000);
-                const inputDiv = $('.ant-upload input');
+                const inputDiv = $(sel.inputDiv);
                 const SubmitButton = $(sel.create);
                 const filePath = path.join(__dirname, '../../data/qa-course.jpg');
                 const removeFilePath = browser.uploadFile(filePath);

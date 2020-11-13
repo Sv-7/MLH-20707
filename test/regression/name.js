@@ -1,6 +1,7 @@
 const sel = require('../../data/selectors.json');
 const clearInputValue = require('../../helpers/clearInputValue');
 const testData = require('../../data/testData.json');
+const path = require('path');
 
 before(() => {
     browser.url('https://qa-apps.netlify.app/app_my_hero'); //open baseUrl
@@ -150,6 +151,17 @@ describe('My Little Hero: Name Values Checking', function () {
             // console.log('AGE: ' + testData.age);
             // console.log('TYPE: ' + dropStoryType.getAttribute('title'));
 
+            const inputDiv = $(sel.inputDiv);
+            const filePath = path.join(__dirname, '../../data/qa-course.jpg');
+            const removeFilePath = browser.uploadFile(filePath);
+
+            browser.execute(function (){
+                document.getElementsByTagName('input')[6].style.display = 'block';
+            });
+
+            inputDiv.waitForDisplayed();
+            inputDiv.setValue(removeFilePath);
+
             createButton.click();
 
             const secondStoryTitle = $(sel.secondStoryTitle);
@@ -159,7 +171,7 @@ describe('My Little Hero: Name Values Checking', function () {
             expect(secondStoryTitle.getText()).toEqual(testData.storyExpectedSecondTitle);
             expect(isStoryContainsName).toEqual(true);
 
-            //browser.pause(4000);
+            browser.pause(4000);
         });
 
     });
