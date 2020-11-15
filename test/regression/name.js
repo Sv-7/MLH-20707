@@ -1,6 +1,7 @@
 const sel = require('../../data/selectors.json');
 const clearInputValue = require('../../helpers/clearInputValue');
 const testData = require('../../data/testData.json');
+const path = require('path');
 
 before(() => {
     browser.url('https://qa-apps.netlify.app/app_my_hero'); //open baseUrl
@@ -18,7 +19,6 @@ describe('My Little Hero: Name Values Checking', function () {
             const inputName = $(sel.name);
             const namePlaceHolder = inputName.getAttribute('placeholder');
             expect(namePlaceHolder).toEqual(testData.namePlaceHolder);
-            //browser.pause(4000);
         });
 
         it('TC-047 Validation if the Name field is enabled to input only letters', function () {
@@ -88,6 +88,14 @@ describe('My Little Hero: Name Values Checking', function () {
 
         });
 
+        it('TC-055 Validation if the Name field isn\'t enabled to input only spaces', function () {
+            const inputName = $(sel.name);
+
+            inputName.setValue(testData.name055);
+            expect(inputName.getValue()).toEqual(testData.name059);
+
+        });
+
         it('TC-056 Validation if the Name field is enabled to input letters with space', function () {
             const inputName = $(sel.name);
 
@@ -123,13 +131,49 @@ describe('My Little Hero: Name Values Checking', function () {
 
         });
 
-        it('TC-055 Validation if the Name field isn\'t enabled to input only spaces', function () {
+        it('TC-060, TC-061 Validation of the story contains the name has been put', function () {
             const inputName = $(sel.name);
+            const radioGender = $$(sel.gender4Name)[testData.gender.he];
+            const inputAge = $(sel.age);
+            const createButton = $(sel.create);
 
-            inputName.setValue(testData.name055);
-            expect(inputName.getValue()).toEqual(testData.name059);
+            inputName.setValue(testData.name047);
+            radioGender.click();
 
+            inputAge.setValue(testData.age);
+            $(sel.storyClick).click();
+
+            const dropStoryType = $$(sel.storyType)[testData.storyType.Comedy]
+            dropStoryType.click();
+
+            // console.log('NAME: ' + testData.name047);
+            // console.log('GENDER: ' + radioGender.getValue());
+            // console.log('AGE: ' + testData.age);
+            // console.log('TYPE: ' + dropStoryType.getAttribute('title'));
+
+            const inputDiv = $(sel.inputDiv);
+            const filePath = path.join(__dirname, '../../data/qa-course.jpg');
+            const removeFilePath = browser.uploadFile(filePath);
+
+            browser.execute(function (){
+                document.getElementsByTagName('input')[6].style.display = 'block';
+            });
+
+            inputDiv.waitForDisplayed();
+            inputDiv.setValue(removeFilePath);
+
+            createButton.click();
+
+            const secondStoryTitle = $(sel.secondStoryTitle);
+            const storyText = $(sel.story4Name);
+            const isStoryContainsName = (storyText.getText()).indexOf(testData.storyExpectedText) > -1;
+
+            expect(secondStoryTitle.getText()).toEqual(testData.storyExpectedSecondTitle);
+            expect(isStoryContainsName).toEqual(true);
+
+            browser.pause(4000);
         });
+
     });
 
 });

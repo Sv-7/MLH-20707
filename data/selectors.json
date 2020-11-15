@@ -4,8 +4,10 @@
   "label": ".ant-col.ant-col-16.ant-form-item-label",
   "name": "#name",
   "gender": ".ant-radio",
+  "gender4Name": ".ant-radio-input",
   "age": "#age",
   "story": ".ant-select-selector",
+  "story4Name": ".card-text",
   "image": ".ant-upload",
   "create": ".ant-btn",
   "storyClick": ".ant-select-show-arrow",
@@ -15,5 +17,7 @@
   "tryAgain": ".btn-primary",
   "alert" : "[role = alert]",
   "ageArrowUp": ".ant-input-number-handler-up",
-  "ageArrowDown": ".ant-input-number-handler-down"
+  "ageArrowDown": ".ant-input-number-handler-down",
+  "secondStoryTitle": ".mb-4",
+  "inputDiv": ".ant-upload input"
 }
