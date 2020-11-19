@@ -105,7 +105,6 @@ describe('Age field inputs validation', function () {
         });
 
         it('TC-01 Age input arrow UP = 1', function () {
-            //ageSetValuePositivePath($(sel.age), data.agePos, 0);
             $(sel.ageArrowUp).click();
             expect($(sel.create).isEnabled()).toEqual(true);
         });
@@ -139,17 +138,12 @@ describe('Age field inputs validation', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
         });
 
-        beforeEach(() => {
-            clearInputValue($(sel.age));
-        });
-
-        it('Test 01 - digit Age input converts to words in the story', function () {
-            browser.url('https://qa-apps.netlify.app/app_my_hero');
+        it('Test 01 - digit Age input converts to words in the story.' +
+            '//NOTE: test set to pass for now, because functionality is not implemented yet', function () {
             for(let i = 0; i < data.ageInput.length; i++) {
                 inputValues4AndClick(data.name, data.gender.she, data.ageInput[i],
                                     data.storyType.Comedy);
                 let textAge = findTextAge();
-                console.log(textAge);
                 $(sel.tryAgain).click();
                // expect(textAge).toEqual(exp.ageWords[i]); // uncomment after functionality is fixed
                 expect(textAge).toEqual(data.ageInput[i] + ''); //delete this row after functionality is fixed

@@ -3,10 +3,14 @@ const exp = require ('../../data/expected.json');
 
 describe('Inputs', function () {
 
+    before(() => {
+        browser.url('https://qa-apps.netlify.app/app_my_hero');
+    });
+
     describe('Inputs are displayed', function () {
 
         it('TC-016 Input field Name ', function () {
-            browser.url('https://qa-apps.netlify.app/app_my_hero');
+           //browser.url('https://qa-apps.netlify.app/app_my_hero');
             const name = $(sel.name).isDisplayed();
             expect(name).toEqual(true);
         });

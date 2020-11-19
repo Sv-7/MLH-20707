@@ -5,4 +5,5 @@ function clearInputValue(selector){
         selector.keys('Delete')
     }
 }
+
 module.exports = clearInputValue;
