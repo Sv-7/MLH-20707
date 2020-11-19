@@ -19,5 +19,6 @@
   "ageArrowUp": ".ant-input-number-handler-up",
   "ageArrowDown": ".ant-input-number-handler-down",
   "secondStoryTitle": ".mb-4",
-  "inputDiv": ".ant-upload input"
+  "inputDiv": ".ant-upload input",
+  "uploadedImage": ".error__pic"
 }
