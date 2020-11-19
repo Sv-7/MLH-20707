@@ -147,7 +147,7 @@ describe('Age field inputs validation', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
             for(let i = 0; i < data.ageInput.length; i++) {
                 inputValues4AndClick(data.name, data.gender.she, data.ageInput[i],
-                    data.storyType.Comedy);
+                                    data.storyType.Comedy);
                 let textAge = findTextAge();
                 console.log(textAge);
                 $(sel.tryAgain).click();
