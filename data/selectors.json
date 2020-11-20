@@ -8,6 +8,7 @@
   "story": ".ant-select-selector",
   "image": ".ant-upload",
   "create": ".ant-btn",
+  "storySelectedOption": ".ant-select-item.ant-select-item-option.ant-select-item-option-selected",
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",
   "storyTypeDropdown": ".ant-select-selection-item",

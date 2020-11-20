@@ -3,58 +3,52 @@ const data = require ('../../data/testData.json');
 const inputValues4andClick = require ('../../helpers/inputValue4AndClick');
 const exp = require ('../../data/expected.json');
 
-
-
-// describe('Testing all types of story presence', function () {
-//     describe('Dropdown type presence', function () {
-//
-//         beforeEach(() => {
-//             browser.url('https://qa-apps.netlify.app/app_my_hero');
-//         });
-//
-//         it('comedy', function () {
-//             const typeDropdown = $(sel.storyClick).click();
-//             const comedyDropdown = $$(sel.storyType)[6].isDisplayed();
-//             expect(comedyDropdown).toEqual(true);
-//         });
-//     });
-// });
-// describe('Testing all types of story presence', function () {
-//     describe('comedyDropdown', function () {
-//         it('comedy', function () {
-//             browser.url('https://qa-apps.netlify.app/app_my_hero');
-//             const typeDropdown = $(sel.storyClick).click();
-//             const comedyDropdown = $$(sel.storyType)[6].isDisplayed();
-//             expect(comedyDropdown).toEqual(true);
-//         });
-//     });
-// });
 describe('Testing all types of story presence', function () {
     describe('Dropdown type presence', function () {
-
         beforeEach(() => {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
         });
-        it('overcomingTheMonster', function () {
-            $('.ant-select-selector').click();
-            browser.pause(4000)
-            expect($$('.ant-select-item-option-content')[0].selectByVisibleText("Overcoming the Monster")).toEqual("Overcoming the Monster ")
-
+        it('1. Overcoming the Monster', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[0].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Overcoming_the_Monster);
+        });
+        it('2. Rebirth', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[1].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Rebirth);
+        });
+        it('3. Quest', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[2].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Quest);
+        });
+        it('4. Journey and Return', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[3].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Journey_and_Return);
+        });
+        it('5. Rags and Riches', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[4].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Rags_and_Riches);
+        });
+        it('6. Tragedy', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[5].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Tragedy);
+        });
+        it('7. comedy', function () {
+            $(sel.storyClick).click();
+            $$(sel.storyType)[6].click();
+            const res = $(sel.storySelectedOption).getText();
+            expect(res).toEqual(exp.storyType.Comedy);
         });
     });
-
-    //     it('overcomingTheMonster', function () {
-    //         const typeDropdown = $(sel.storyPlaceHold).click();
-    //         const overcomingDropdown = $(sel.storyTypeDropdown).getAttribute('title');
-    //         expect(overcomingDropdown).toEqual(data.storyType["Overcoming the Monster"]);
-    //     });
-    //
-    //
-    //     xit('comedy', function () {
-    //         const typeDropdown = $(sel.storyClick).click();
-    //         const comedyDropdown = $$(sel.storyType)[6].isDisplayed();
-    //         expect(comedyDropdown).toEqual(true);
-    //     });
-    // });
 });
-

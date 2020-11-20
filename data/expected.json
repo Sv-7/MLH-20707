@@ -16,6 +16,15 @@
   "submitButton": "Create!",
   "ageAlertLooksLikeUnrealAge": "looks like unreal age",
   "ageAlertRequired": "Required",
+  "storyType": {
+    "Overcoming_the_Monster": "Overcoming the Monster",
+    "Rebirth": "Rebirth",
+    "Quest": "Quest",
+    "Journey_and_Return": "Journey and Return",
+    "Rags_and_Riches": "Rags and Riches",
+    "Tragedy": "Tragedy",
+    "Comedy": "Comedy"
+  },
   "ageWords": [
     "one", "two", "three", "four", "five",
     "six", "seven", "eight", "nine", "ten",
