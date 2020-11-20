@@ -24,8 +24,9 @@ exports.config = {
         // './test/regression/age.js',
         // './test/regression/image.js',
         // './test/regression/storyReg.js',
+        // './test/smoke/storySm.js',
         // './test/regression/gender.js'
-        './test/regression/expectedStory.js',
+        // './test/regression/expectedStory.js',
     ],
     // Patterns to exclude.
     exclude: [

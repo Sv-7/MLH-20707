@@ -20,5 +20,8 @@
   "ageArrowDown": ".ant-input-number-handler-down",
   "secondStoryTitle": ".mb-4",
   "inputDiv": ".ant-upload input",
-  "uploadedImage": ".error__pic"
+  "uploadedImage": ".error__pic",
+  "storyName": ".mb-4",
+  "storyMoral": "div.mt-4.p-3 div.card.hero__card div.ant-card.ant-card-bordered div.ant-card-body > p.card-text:nth-child(5)",
+  "headerStory": "//h3"
 }

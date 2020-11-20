@@ -1,9 +1,9 @@
-const sel = require ('../../data/selectors.json');
+
 const data = require ('../../data/testStory.json');
 const inputValues4andClick = require ('../../helpers/inputValue4AndClick');
 const inputValues4 = require ('../../helpers/inputValues4');
-const selSt = require ('../../data/selectorsStory.json');
-const tComedy = require ('../../data/textComedy.json')
+const sel = require ('../../data/selectors.json');
+const tComedy = require ('../../data/testComedy.json')
 const path = require('path');
 
 describe('Checking the main functionality', function () {
@@ -19,11 +19,11 @@ describe('Checking the main functionality', function () {
             const comedyNameText = $(sel.storyName).getText();
             expect(comedyNameText).toEqual(tComedy.comedyName);
 
-            const comConTx = $(selSt.storyForReading).getText();
+            const comConTx = $(sel.story4Name).getText();
             const comedyContextText = comConTx.startsWith(tComedy.comedyContext)
             expect(comedyContextText).toEqual(true);
 
-            const stMoral = $(selSt.storyMoral).isDisplayed();
+            const stMoral = $(sel.storyMoral).isDisplayed();
             expect(stMoral).toEqual(true);
 
             const btn = $(sel.tryAgain).isDisplayed();
@@ -34,7 +34,7 @@ describe('Checking the main functionality', function () {
             inputValues4 (data.name[0], data.gender.it, data.age[0], data.storyType.Comedy);
             browser.pause(2000);
             const inputDiv = $(sel.inputDiv);
-            const SubmitButton = $(sel.submitButton);
+            const SubmitButton = $(sel.create);
             const filePath = path.join(__dirname, '../../data/qa-course.jpg');
             const removeFilePath = browser.uploadFile(filePath);
             browser.execute(function (){
@@ -46,14 +46,14 @@ describe('Checking the main functionality', function () {
             browser.pause(2000);
             SubmitButton.click();
 
-            const comedyNameText = $(selSt.storyName).getText();
+            const comedyNameText = $(sel.storyName).getText();
             expect(comedyNameText).toEqual(tComedy.comedyName);
 
-            const comConTx = $(selSt.storyForReading).getText();
+            const comConTx = $(sel.story4Name).getText();
             const comedyContextText = comConTx.startsWith(tComedy.comedyContext)
             expect(comedyContextText).toEqual(true);
 
-            const stMoral = $(selSt.storyMoral).isDisplayed();
+            const stMoral = $(sel.storyMoral).isDisplayed();
             expect(stMoral).toEqual(true);
 
             const btn = $(sel.tryAgain).isDisplayed();
@@ -64,7 +64,7 @@ describe('Checking the main functionality', function () {
             inputValues4 (data.name[0], data.gender.she, data.age[0], data.storyType.Comedy);
             browser.pause(2000);
             const inputDiv = $(sel.inputDiv);
-            const SubmitButton = $(sel.submitButton);
+            const SubmitButton = $(sel.create);
             const filePath = path.join(__dirname, '../../data/qa-course.jpg');
             const removeFilePath = browser.uploadFile(filePath);
             browser.execute(function (){
@@ -76,14 +76,14 @@ describe('Checking the main functionality', function () {
             browser.pause(2000);
             SubmitButton.click();
 
-            const comedyNameText = $(selSt.storyName).getText();
+            const comedyNameText = $(sel.storyName).getText();
             expect(comedyNameText).toEqual(tComedy.comedyName);
 
-            const comConTx = $(selSt.storyForReading).getText();
+            const comConTx = $(sel.story4Name).getText();
             const comedyContextText = comConTx.startsWith(tComedy.comedyContext)
             expect(comedyContextText).toEqual(true);
 
-            const stMoral = $(selSt.storyMoral).isDisplayed();
+            const stMoral = $(sel.storyMoral).isDisplayed();
             expect(stMoral).toEqual(true);
 
             const btn = $(sel.tryAgain).isDisplayed();
