@@ -23,7 +23,8 @@ exports.config = {
         './test/smoke/mainFunctionality.js',
         './test/regression/age.js',
         './test/regression/image.js',
-        './test/regression/storyReg.js'
+        './test/regression/storyReg.js',
+        './test/regression/gender.js'
     ],
     // Patterns to exclude.
     exclude: [

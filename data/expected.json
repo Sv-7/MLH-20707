@@ -26,5 +26,8 @@
     "a hundred", "a thousand", "a million",
     "a billion", "a hundred billions"
   ],
-  "tryAgainBtn": "Try again!"
+  "tryAgainBtn": "Try again!",
+  "genderInComedyTextHE": ["his", "He", "He"],
+  "genderInComedyTextSHE": ["her", "She", "She"],
+  "genderInComedyTextIT": ["its", "It", "It"]
 }
