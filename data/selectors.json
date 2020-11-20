@@ -10,6 +10,7 @@
   "create": ".ant-btn",
   "storyClick": ".ant-select-show-arrow",
   "storyType": ".ant-select-item-option",
+  "storyTypeDropdown": ".ant-select-selection-item",
   "storyPlaceHold": ".ant-select-selection-placeholder",
   "genderOptions": ".ant-radio-wrapper",
   "tryAgain": ".btn-primary",
