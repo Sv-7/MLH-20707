@@ -29,5 +29,6 @@
   "tryAgainBtn": "Try again!",
   "genderInComedyTextHE": ["his", "He", "He"],
   "genderInComedyTextSHE": ["her", "She", "She"],
-  "genderInComedyTextIT": ["its", "It", "It"]
+  "genderInComedyTextIT": ["its", "It", "It"],
+  "hStory": "My Little Hero"
 }
