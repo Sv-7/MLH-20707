@@ -10,7 +10,6 @@ describe('Inputs', function () {
     describe('Inputs are displayed', function () {
 
         it('TC-016 Input field Name ', function () {
-           //browser.url('https://qa-apps.netlify.app/app_my_hero');
             const name = $(sel.name).isDisplayed();
             expect(name).toEqual(true);
         });

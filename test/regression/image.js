@@ -1,8 +1,6 @@
 const sel = require('../../data/selectors.json');
-const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
 const inputValues4 = require ('../../helpers/inputValues4');
-const inputValues4AndClick = require ('../../helpers/inputValue4AndClick');
 const path = require('path');
 
 describe('Checking the image upload functionality', function () {

@@ -31,7 +31,7 @@ describe('Age field inputs validation', function () {
             expect($(sel.create).isEnabled()).toEqual(true);
         });
 
-        it('TC-03 Age Pos test input 12 digits: 120987654321', function () {
+        it('TC-03 Age Pos test input 12 digits: 999999999999', function () {
             ageSetValuePositivePath($(sel.age), data.agePos, 2);
             expect($(sel.create).isEnabled()).toEqual(true);
         });
@@ -55,7 +55,7 @@ describe('Age field inputs validation', function () {
             expect($(sel.create).isEnabled()).toEqual(false);
         });
 
-        it('TC-02 Age Neg test input >12 digits: 1120987654321', function () {
+        it('TC-02 Age Neg test input >12 digits: 1120987654320', function () {
             const alert = ageSetValueNegativePathALERT($(sel.age), data.ageNeg, 1);
             expect(alert).toEqual(exp.ageAlertLooksLikeUnrealAge);
             expect($(sel.create).isEnabled()).toEqual(false);
@@ -113,7 +113,7 @@ describe('Age field inputs validation', function () {
             $(sel.age).setValue((data.agePos)[2]);
             $(sel.ageArrowUp).click();
             expect($(sel.create).isEnabled()).toEqual(false);
-            browser.pause(1000);
+            $(sel.alert).waitForDisplayed(2000);
             const result = $(sel.alert).getText();
             expect(result).toEqual(exp.ageAlertLooksLikeUnrealAge);
         });

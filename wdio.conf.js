@@ -1,3 +1,6 @@
+const drivers = {
+    chrome: { version: '87.0.4280.20' }, // https://chromedriver.chromium.org/
+}
 exports.config = {
     //
     // ====================
@@ -21,10 +24,10 @@ exports.config = {
         './test/regression/labels.js',
         './test/regression/inputs.js',
         './test/smoke/mainFunctionality.js',
-        './test/regression/age.js',
         './test/regression/image.js',
         './test/regression/storyReg.js',
-        './test/regression/gender.js'
+        './test/regression/gender.js',
+        './test/regression/age.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -112,7 +115,13 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['selenium-standalone'],
+    services: [
+        ['selenium-standalone', {
+            logPath: 'logs',
+            installArgs: { drivers },
+            args: { drivers },
+        }]
+    ],
 
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber

@@ -1,24 +1,23 @@
 const sel = require('../../data/selectors.json');
 const exp = require('../../data/expected.json')
 
-describe('My Little Hero', function () { //define suite title by passing a string
+describe('My Little Hero', function () {
 
     before(() => {
         browser.url('https://qa-apps.netlify.app/app_my_hero');
     });
 
-    describe('Getting to the page', function () { //define sub-suite title by passing a string
+    describe('Getting to the page', function () {
 
-        it('TC-001 Title is correct ', function () { //define test title by passing a string
-            //browser.url('https://qa-apps.netlify.app/app_my_hero'); //open baseUrl
-            let title = browser.getTitle(); //get page title and assign it to the "title" variable
-            expect(title).toEqual('MLH trial'); //compare {title} (actual) and "MLH trial" (expected)
+        it('TC-001 Title is correct ', function () {
+            let title = browser.getTitle();
+            expect(title).toEqual('MLH trial');
         });
 
     });
 
     describe('Page title and description are present and correct text is displayed',
-        function () { //define sub-suite title by passing a string
+        function () {
 
         it('TC-002 Page title (H3) is displayed', function () {
             const head3 = $(sel.head3).isDisplayed();
