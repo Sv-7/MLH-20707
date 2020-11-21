@@ -17,6 +17,7 @@ exports.config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
+        './test/regression/typeOfStory.js',
         './test/regression/name.js',
         './test/regression/labels.js',
         './test/regression/inputs.js',
