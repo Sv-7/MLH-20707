@@ -1,4 +1,3 @@
-
 const data = require ('../../data/testStory.json');
 const inputValues4andClick = require ('../../helpers/inputValue4AndClick');
 const inputValues4 = require ('../../helpers/inputValues4');
@@ -32,7 +31,6 @@ describe('Checking the main functionality', function () {
 
         it('TC-123 #12 Pairwise - Verify that the story text is displayed correctly  after a combination of required and optional inputs is submitted by clicking "Create" button', function () {
             inputValues4 (data.name[0], data.gender.it, data.age[0], data.storyType.Comedy);
-            browser.pause(2000);
             const inputDiv = $(sel.inputDiv);
             const SubmitButton = $(sel.create);
             const filePath = path.join(__dirname, '../../data/qa-course.jpg');
@@ -41,9 +39,7 @@ describe('Checking the main functionality', function () {
                 document.getElementsByTagName('input')[6].style.display = 'block';
             });
             inputDiv.waitForDisplayed();
-            browser.pause(2000);
             inputDiv.setValue(removeFilePath);
-            browser.pause(2000);
             SubmitButton.click();
 
             const comedyNameText = $(sel.storyName).getText();
@@ -62,7 +58,6 @@ describe('Checking the main functionality', function () {
 
         it('TC-133 #22 Pairwise - Verify that the story text is displayed correctly  after a combination of required and optional inputs is submitted by clicking "Create" button', function () {
             inputValues4 (data.name[0], data.gender.she, data.age[0], data.storyType.Comedy);
-            browser.pause(2000);
             const inputDiv = $(sel.inputDiv);
             const SubmitButton = $(sel.create);
             const filePath = path.join(__dirname, '../../data/qa-course.jpg');
@@ -71,9 +66,7 @@ describe('Checking the main functionality', function () {
                 document.getElementsByTagName('input')[6].style.display = 'block';
             });
             inputDiv.waitForDisplayed();
-            browser.pause(2000);
             inputDiv.setValue(removeFilePath);
-            browser.pause(2000);
             SubmitButton.click();
 
             const comedyNameText = $(sel.storyName).getText();
@@ -91,3 +84,4 @@ describe('Checking the main functionality', function () {
         });
     });
 });
+

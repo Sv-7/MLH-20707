@@ -22,3 +22,4 @@ describe('User can read the story after submitting choices', function () {
         });
     });
 });
+
