@@ -1,0 +1,96 @@
+23:32:30.251 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:32:30.253 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 36228
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:32:31.442 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:32:31.471 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 826b0702347c32d51f10722ae9e7a459 (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:44.082 INFO [ActiveSessions$1.onStop] - Removing session 826b0702347c32d51f10722ae9e7a459 (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:45.250 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:32:45.251 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 2714
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:32:46.297 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:32:46.300 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 93362071b11fb2a407aa35c909e982cf (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:47.255 INFO [ActiveSessions$1.onStop] - Removing session 93362071b11fb2a407aa35c909e982cf (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:48.541 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:32:48.541 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 25999
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:32:49.504 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:32:49.505 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 2d9582aff0183ad562aeef38f51d2919 (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:50.581 INFO [ActiveSessions$1.onStop] - Removing session 2d9582aff0183ad562aeef38f51d2919 (org.openqa.selenium.chrome.ChromeDriverService)
+23:32:51.787 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:32:51.787 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 6169
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:32:52.826 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:32:52.827 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session a28f70209090ac12a9c8ff0d531bb3ff (org.openqa.selenium.chrome.ChromeDriverService)
+23:33:07.912 INFO [ActiveSessions$1.onStop] - Removing session a28f70209090ac12a9c8ff0d531bb3ff (org.openqa.selenium.chrome.ChromeDriverService)
+23:33:09.143 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:33:09.143 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 47077
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:33:10.104 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:33:10.106 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e3a83faacba007e2f57b43fc86d035e3 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:03.038 INFO [ActiveSessions$1.onStop] - Removing session e3a83faacba007e2f57b43fc86d035e3 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:04.204 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:34:04.204 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 42554
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:34:05.189 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:34:05.191 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 32007c797ca654dc5bcb9f92322816b2 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:11.479 INFO [ActiveSessions$1.onStop] - Removing session 32007c797ca654dc5bcb9f92322816b2 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:12.664 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:34:12.664 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 5940
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:34:13.722 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:34:13.724 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session fa10c40de04688b537c6b0578a7b53d1 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:19.137 INFO [ActiveSessions$1.onStop] - Removing session fa10c40de04688b537c6b0578a7b53d1 (org.openqa.selenium.chrome.ChromeDriverService)
+23:34:20.337 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "acceptInsecureCerts": true,
+  "browserName": "chrome"
+}
+23:34:20.337 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}) on port 6985
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+23:34:21.349 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+23:34:21.351 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 7ead84b9c25aa5ae99a398a55b7a5ca9 (org.openqa.selenium.chrome.ChromeDriverService)
+23:35:08.052 INFO [ActiveSessions$1.onStop] - Removing session 7ead84b9c25aa5ae99a398a55b7a5ca9 (org.openqa.selenium.chrome.ChromeDriverService)

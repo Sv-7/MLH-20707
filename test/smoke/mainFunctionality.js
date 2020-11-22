@@ -1,8 +1,6 @@
 const sel = require('../../data/selectors.json');
-const exp = require('../../data/expected.json');
 const data = require('../../data/testData.json');
 const inputValues4 = require ('../../helpers/inputValues4');
-const inputValues4AndClick = require ('../../helpers/inputValue4AndClick');
 const path = require('path');
 
 describe('Checking the main functionality', function () {
@@ -15,10 +13,18 @@ describe('Checking the main functionality', function () {
 
         it('TC-032 Create button is clickable after 1-4 are filled in', function () {
             inputValues4(data.name, data.gender.she, data.age, data.storyType.Comedy);
-            browser.pause(3000);
+            $(sel.create).waitForEnabled(3000);
             const create = $(sel.create).isEnabled();
-            console.log("88888888" + create);
+            expect(create).toEqual(true);
+        });
 
+        it('TC-033 Create button is clickable after 1-4 are filled in NO order', function () {
+            const create = $(sel.create).isEnabled();
+            $(sel.storyClick).click();
+            $$(sel.storyType)[data.storyType.Comedy].click();
+            $(sel.age).setValue(data.age);
+            $$(sel.gender)[data.gender.she].click();
+            $(sel.name).setValue(data.name);
             expect(create).toEqual(true);
         });
 
@@ -30,19 +36,12 @@ describe('Checking the main functionality', function () {
             browser.url('https://qa-apps.netlify.app/app_my_hero');
         });
 
-        it('TC-033 "He" choice does not break functionality ', function () {
+        it('TC-034 "He" choice does not break functionality ', function () {
             inputValues4(data.name, data.gender.he, data.age, data.storyType.Comedy);
             $(sel.create).click();
             const btn = $(sel.tryAgain).isDisplayed();
             expect(btn).toEqual(true);
         });
-
-        // Add tests for She, It, fields filled in different order, image png, image jpeg, Try Again.
-        // it('TC-034 ...', function () {
-        //     inputValues4AndClick (data.name, data.gender.he, data.age, data.storyType.Comedy);
-        //     const btn = $(sel.tryAgain).isDisplayed();
-        //     expect(btn).toEqual(true);
-        // });
 
         describe('MLH-7 Image is uploading (600px - jpg)', function () {
 
